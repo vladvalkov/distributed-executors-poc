@@ -8,7 +8,11 @@ Simple POC of a distributed job execution.
 - [ ] Metrics and observability
 
 ## How to run
+You will need `uv` installed.
 ```bash
+# Install dependencies
+uv sync
+
 # Start the server
 # This starts five workers on ports 8765-8769
 # At the moment, the workers square the passed number and sleep for 1 second before returning the result
